@@ -1,1 +1,74 @@
-<div id="app"></div>
+<html>
+
+<head>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+
+<body>
+	<h1 id="title">freeCodeCamp Survey Form</h1>
+	<p id="description">
+		Project developed as part of the activities of the <a href="https://www.freecodecamp.org/">freeCodeCamp</a>
+		Responsive Web Design course.
+	</p>
+
+	<form id="survey-form">
+		<div class="form-fiel">
+			<label id="name-label">Name: <input placeholder="Enter your name" type="text" id="name" /></label>
+		</div>
+
+		<div class="form-fiel">
+			<label id="email-label">Email: <input placeholder="Enter a contact email" type="email" id="email" /></label>
+		</div>
+
+		<div class="form-fiel">
+			<label id="number-label">Age: <input min="18" max="100" type="number" id="number" placeholder="Enter your age"  /></label>
+		</div>
+
+		<div class="form-fiel">
+			<label>Which option best describes your current role?
+         <select id="dropdown">
+        <option selected value></option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="learner">Full Time Learner</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+      </label>
+		</div>
+
+
+
+		<div class="form-fiel-group">
+			<div>Would you recommend freeCodeCamp to a friend?</div>
+			<div class="form-fiel"><label ><input name="recomend" type="radio"  />Definitely</label></div>
+			<div class="form-fiel"> <label ><input name="recomend" type="radio"  />Maybe</label></div>
+			<div class="form-fiel"> <label ><input name="recomend" type="radio"  />Not sure</label></div>
+		</div>
+
+		<p>What would you like to see improved? (Check all that apply)</p>
+
+		<div class="form-fiel">
+			<label><input type="checkbox" value="1" />Front-end Projects</label>
+		</div>
+		<div class="form-fiel">
+			<label><input type="checkbox"  value="2"/>Back-end Projects</label>
+		</div>
+		<div class="form-fiel">
+			<label><input type="checkbox"  value="3"/>Data Visualization</label>
+		</div>
+		<div class="form-fiel">
+			<label><input type="checkbox"  value="4"/>Challenges</label>
+		</div>
+		<div class="form-fiel">
+			<label><input type="checkbox"  value="5"/>Open Source Community</label>
+		</div>
+
+    <p>Any comments?</p>
+    <textarea></textarea>
+
+<button type="submit">Send</button>
+	</form>
+</body>
+
+</html>
